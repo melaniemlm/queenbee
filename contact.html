@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--css style and lightbox style-->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/magnific-popup.css">
+    <!--JS header shrink & light box-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aa54a4c3ed.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url(images/honeycomb.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    main {
+        padding-top: 230px;
+    }
+    header {
+        background-color: #fff;
+    }
+    #logo {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+   #beekeepDiv {
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    #beekeepImage {
+        position: absolute;
+        object-fit: contain;
+    }
+    #mainContainer {
+        background-color: #fff;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    rect {
+        width: 100%;
+        height: 100%;
+        fill: rgb(119, 119, 119);
+    }
+    #newsletter {
+        background-color: #f4e6aa;
+    }
+    footer {
+        height: 300px;
+        background-color: #89948e;
+    }
+    footer li {
+        list-style: none;
+        margin: 10px 30px;
+        display: inline-block;
+        font-size: 40px;
+        padding: 10px 10px;
+        color: #f0f0f0;
+        transition: 0.4s;
+    }
+    footer li i {
+        color: #f0f0f0;
+    }
+    footer li i:hover {
+        font-size: 50px;
+    }
+</style>
+<body>
+
+    <!-- Navigation -->    
+    <header>
+    <!--add "fixed-top or sticky class to nav and image and JS rule for logo shrink on scroll"-->
+        <div class="myNav">
+            <div>
+                <div class="logo">
+                   <a href="index.html"><img src="images/logo.jpg" alt="logo" height="150px"></a>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link navbutton" href="cafe.html">Café</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbutton" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbutton" href="beekeeping.html">Bee Keeping</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbutton active" href="contact.html">Contact
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+<!-- Banner image -->
+        <div class="container-fluid" id="beekeepDiv">
+            <img src="images/photo2.jpg" class="img-fluid" id="beekeepImage">
+        </div>
+
+<!-- Text about contact -->        
+        <div class="container pt-5" id="mainContainer">
+            <h3 class="text-center">Contact</h3>
+            <p class="text-center"><em></em>If you would like to get in touch, please send us a message using the contact form below.</p>
+            <br>
+
+<!-- Left column info -->            
+        <div class="container p-5">
+            <div class="row pb-5">
+                <div class="col-md-4">
+                    <p><i class="fas fa-clock"></i> <em>Opening Times:</em></p>
+                    <p>Monday - Friday: 09:00 - 16:00</p>
+                    <p>Saturday & Sunday: 11:00 - 16:00</p><br>
+                    <p><i class="fas fa-map-marker-alt"></i> Melrose, Scottish Borders</p>
+                    <p><i class="fas fa-phone"></i> Phone: 01896 555555</p>
+                    <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
+                </div>
+<!-- Form -->                
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="float-right button2" type="sumbit">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mx-auto">
+                    <div class="row justify-content-center pt-4">
+                        <div id="googleMap">
+                            <img src="images/map.png" class="img-fluid py-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        </div>
+
+    </main>
+<!-- Newsletter -->
+    <div class="container-fluid align-content-center py-5" id="newsletter">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2>Subscribe</h2>
+                <p>Sign up to our newsletter for latest offers etc etc.</p>
+            </div>
+        </div>
+        <form>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Email address">
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center pt-3">
+                <button class="button2" type="submit" value="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+<!-- Footer -->    
+<footer>
+    <div class="row justify-content-center pt-3">
+        <div class="media">
+            <ul>
+                <li><i class="fab fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fab fa-youtube" aria-hidden="true"></i></li>
+                <li><i class="fab fa-facebook" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
