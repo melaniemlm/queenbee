@@ -67,6 +67,9 @@
     h3 {
         margin-bottom: 1em;
     }
+    #contact p {
+        font-size: 1rem;
+    }
     #newsletter {
         background-color: #f4e6aa;
     }
@@ -141,9 +144,9 @@
             <br>
 
 <!-- Left column info -->            
-        <div class="container p-5">
-                <div class="row " style="justify-content: space-around;">
-                    <div class="col-lg-3">
+            <div class="container" id="contact">
+                <div class="row" style="justify-content: space-around;">
+                    <div class="col-lg-6">
                         <p><i class="fas fa-clock"></i> <em>Opening Times:</em></p>
                         <p>Monday - Friday: 09:00 - 16:00</p>
                         <p>Saturday & Sunday: 11:00 - 16:00</p><br>
@@ -152,28 +155,24 @@
                         <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
                     </div>
     <!-- Form -->    
-                    <form name="contact" method="POST" data-netlify="true">
-                        <div class="form-group row">
-                            <div class="col-lg">
-                                <input type="text" class="form-control" id="name" placeholder="Name">
-                            </div>
-                            <div class="col-lg">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-lg">
-                                <textarea class="form-control" id="comments" placeholder="Comment" rows="6"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row float-right">
-                            <div clas="col-lg">
-                                <button class="button2" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
 
+            <form>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group col">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
                 </div>
+                <div class="form-row">
+                    <textarea class="form-control" placeholder="Comment" rows="6"></textarea>
+                </div>
+                <div class="form-row pt-2 float-right">
+                    <button class="button2" type="submit">Send Message</button>
+                </div>
+            </form>
+                    
                 <div class="row">    
                     <div class="col-lg-8 mx-auto">
                         <div class="row justify-content-center pt-4">
@@ -183,8 +182,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div> 
+            </div> 
+        </div>
 
     </main>
 <!-- Newsletter -->
