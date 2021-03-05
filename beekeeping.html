@@ -35,7 +35,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-   #beekeepDiv {
+   /*#beekeepDiv {
         position: relative;
         height: 400px;
         overflow: hidden;
@@ -46,6 +46,18 @@
     #beekeepImage {
         position: absolute;
         object-fit: contain;
+    }*/
+    #cafeImage {
+        background-image: url(images/photo1.jpg);
+        background-position: 50%;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
     #mainContainer {
         background-color: #fff;
@@ -60,7 +72,7 @@
         background-color: #f4e6aa;
     }
     footer {
-        height: 300px;
+        height: 350px;
         background-color: #89948e;
     }
     footer li {
@@ -78,6 +90,7 @@
     footer li i:hover {
         font-size: 50px;
     }
+    
 </style>
 <body>
 
@@ -118,20 +131,17 @@
 
 <!-- Banner image -->
     <main role="main">
-        <div class="container-fluid" id="beekeepDiv">
+        <div class="container-fluid" id="cafeImage"></div>
+
+        <!--<div class="container-fluid" id="beekeepDiv">
             <img src="images/photo1.jpg" class="img-fluid" id="beekeepImage">
-        </div>
+        </div>-->
 
 <!-- Video to the left and paragraph on the right-->        
         <div class="container" id="mainContainer">
             <div class="container">
-                <div class="row pt-5 px-3">
-                    <div class="col-sm-6 pt-5">
-                        <video  width="500" height="300" controls class="float-left">
-                            <source src="images/QB 1.mp4" type="video/mp4"></video>
-                        </video>
-                    </div>
-                    <div class="col-sm-6 text-center float-right">
+                <div class="row" style="justify-content: space-around;">
+                    <div class="col-lg-6 order-lg-1 text-center float-right">
                         <h2 class="pb-3">Introduction To Bee-Keeping</h2>
                         <p class="text-justify">This one-day course is designed as an introduction for potential new beekeepers or beekeepers with less than 2 years experience.<br><br>
                         The morning is a classroom lecture and the afternoon is a practical demonstration within our hives to allow you "hands on" experience.<br><br>
@@ -139,6 +149,11 @@
                         Protective clothing will be supplied if required but please bring stout boots or "wellies". Lunch will be provided.<br><br>
                         Course will run 10am till 4pm<br><br>
                         £30.00 per person</p>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <video class="img-fluid" width="500" height="300" controls>
+                            <source src="images/QB 1.mp4" type="video/mp4"></video>
+                        </video>
                     </div>  
                 </div>
             </div>
@@ -251,6 +266,23 @@
                 <li><i class="fab fa-youtube" aria-hidden="true"></i></li>
                 <li><i class="fab fa-facebook" aria-hidden="true"></i></li>
             </ul>
+        </div>
+    </div>
+    <div class="row" id="footer">
+        <div class="col-sm-4">
+            <h4 style="color: #f0f0f0; margin-bottom: 1em;">Contact Us</h4>
+            <p style="color: #f0f0f0;">Phone: 01896 555555</p>
+            <p style="color: #f0f0f0;">Email: mail@mail.com</p>
+        </div>
+        <div class="col-sm-4">
+            <h4 style="color: #f0f0f0; margin-bottom: 1em;">Opening Times</h4>
+            <p style="color: #f0f0f0;">Monday - Friday: 09:00 - 16:00</p>
+            <p style="color: #f0f0f0;">Saturday & Sunday: 11:00 - 16:00</p>
+        </div>
+        <div class="col-sm-4">
+            <h4 style="color: #f0f0f0; margin-bottom: 1em;">Address</h4>
+            <p style="color: #f0f0f0;">Melrose</p>
+            <p style="color: #f0f0f0;">Scottish Borders</p>
         </div>
     </div>
 </footer>

@@ -8,7 +8,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-align: center;
-    color: #333;
 }
 
 h1, h2, h3, h4 {
@@ -19,6 +18,7 @@ p {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 1.15em;
+    color: #333;
 }
 
 /* NAVBAR TEST */
@@ -39,11 +39,12 @@ p {
     z-index: 10000;
 }
 .navbar {
-    background-color: #fff impo !important;
+    background-color: #fff !important;
     
 }
 .navbar .navbar-nav {
     margin: 0 auto;
+    background-color: #fff;
 }
 
 .navbar .nav-item a{
@@ -119,7 +120,6 @@ a.nav-link.navbutton.active {
     padding: 12px 28px;
     letter-spacing: 5px;
 }
-
 
 hr {
     border: 0;
