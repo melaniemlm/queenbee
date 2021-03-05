@@ -142,46 +142,49 @@
 
 <!-- Left column info -->            
         <div class="container p-5">
-            <div class="row pb-5" style="justify-content: space-around;">
-                <div class="col-lg-4">
-                    <p><i class="fas fa-clock"></i> <em>Opening Times:</em></p>
-                    <p>Monday - Friday: 09:00 - 16:00</p>
-                    <p>Saturday & Sunday: 11:00 - 16:00</p><br>
-                    <p><i class="fas fa-map-marker-alt"></i> Melrose, Scottish Borders</p>
-                    <p><i class="fas fa-phone"></i> Phone: 01896 555555</p>
-                    <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
-                </div>
-<!-- Form -->   
-                <form name="contact" method="POST" data-netlify="true">
-                <div class="col-md-8">
-                    <div class="row" style="justify-content: space-around;">       
-                        <div class="col-lg-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                        </div>
-                        <div class="col-lg-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                        </div>
+                <div class="row " style="justify-content: space-around;">
+                    <div class="col-lg-3">
+                        <p><i class="fas fa-clock"></i> <em>Opening Times:</em></p>
+                        <p>Monday - Friday: 09:00 - 16:00</p>
+                        <p>Saturday & Sunday: 11:00 - 16:00</p><br>
+                        <p><i class="fas fa-map-marker-alt"></i> Melrose, Scottish Borders</p>
+                        <p><i class="fas fa-phone"></i> Phone: 01896 555555</p>
+                        <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
                     </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-                    <br>
-                    <div class="row">
-                        <div class="col-lg-12 form-group">
-                            <button class="float-right button2" type="sumbit">Send Message</button>
+    <!-- Form -->    
+                    <form name="contact" method="POST" data-netlify="true">
+                        <div class="form-group row">
+                            <div class="col-lg">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="col-lg">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
                         </div>
-                    </div>
+                        <div class="form-group row">
+                            <div class="col-lg">
+                                <textarea class="form-control" id="comments" placeholder="Comment" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row float-right">
+                            <div clas="col-lg">
+                                <button class="button2" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
-                </form>
-<!--MAP-->                
-                <div class="col-lg-8 mx-auto">
-                    <div class="row justify-content-center pt-4">
-                        <div id="googleMap">
-                            <img src="images/map.png" class="img-fluid py-3">
+                <div class="row">    
+                    <div class="col-lg-8 mx-auto">
+                        <div class="row justify-content-center pt-4">
+                            <div id="googleMap">
+                                <img src="images/map.png" class="img-fluid py-3">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div> 
-        </div>
 
     </main>
 <!-- Newsletter -->
