@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact Test</title>
+    <title>Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -13,7 +13,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/aa54a4c3ed.js" crossorigin="anonymous"></script>
-</head>
+
+    
 <style>
     *, ::after, ::before {
         box-sizing: border-box;
@@ -26,7 +27,7 @@
         background-size: cover;
     }
     main {
-        padding-top: 230px;
+        padding-top: 235px;
     }
     header {
         background-color: #fff;
@@ -64,8 +65,15 @@
         padding-top: 80px;
         padding-bottom: 80px;
     }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1em;
+    }
     h3 {
         margin-bottom: 1em;
+    }
+    #contact p {
+        font-size: 1rem;
     }
     #newsletter {
         background-color: #f4e6aa;
@@ -90,6 +98,8 @@
         font-size: 50px;
     }
 </style>
+</head>
+    
 <body>
 
     <!-- Navigation -->    
@@ -98,7 +108,7 @@
         <div class="myNav">
             <div>
                 <div class="logo">
-                   <a href="index.html"><img src="images/logo.jpg" alt="logo" height="150px"></a>
+                   <a href="index.html"><img src="images/logo.jpg" alt="queen bee logo" height="150px"></a>
                 </div>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -129,55 +139,57 @@
 
     <main role="main">
 <!-- Banner image -->
-        <div class="container-fluid" id="cafeImage"></div>
+        <div class="container-fluid" id="cafeImage" alt="beehive"></div>
        <!-- <div class="container-fluid" id="beekeepDiv">
             <img src="images/photo2.jpg" class="img-fluid" id="beekeepImage">
         </div>-->
 
 <!-- Text about contact -->        
         <div class="container pt-5" id="mainContainer">
-            <h3 class="text-center">Contact</h3>
+            <h1 class="text-center">Contact</h1>
             <p class="text-center"><em></em>If you would like to get in touch, please send us a message using the contact form below.</p>
             <br>
 
 <!-- Left column info -->            
-        <div class="container p-5">
-            <div class="row pb-5" style="justify-content: space-around;">
-                <div class="col-lg-4">
-                    <p><i class="fas fa-clock"></i> <em>Opening Times:</em></p>
-                    <p>Monday - Friday: 09:00 - 16:00</p>
-                    <p>Saturday & Sunday: 11:00 - 16:00</p><br>
-                    <p><i class="fas fa-map-marker-alt"></i> Melrose, Scottish Borders</p>
-                    <p><i class="fas fa-phone"></i> Phone: 01896 555555</p>
-                    <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
-                </div>
-<!-- Form -->                
-                <div class="col-md-8">
-                    <div class="row" style="justify-content: space-around;">
-                        <div class="col-lg-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                        </div>
-                        <div class="col-lg-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                        </div>
+            <div class="container" id="contact">
+                <div class="row" style="justify-content: space-around;">
+                    <div class="col-lg-6">
+                        <p><i class="fas fa-clock"></i> <em>Opening Times:</em></p>
+                        <p>Monday - Friday: 09:00 - 16:00</p>
+                        <p>Saturday & Sunday: 11:00 - 16:00</p><br>
+                        <p><i class="fas fa-map-marker-alt"></i> Melrose, Scottish Borders</p>
+                        <p><i class="fas fa-phone"></i> Phone: 01896 555555</p>
+                        <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
                     </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-                    <br>
-                    <div class="row">
-                        <div class="col-lg-12 form-group">
-                            <button class="float-right button2" type="sumbit">Send Message</button>
-                        </div>
+    <!-- Form -->    
+
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="form-row">
+                    <div class="form-group col">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group col">
+                        <input type="email" class="form-control" placeholder="Email">
                     </div>
                 </div>
-                <div class="col-lg-8 mx-auto">
-                    <div class="row justify-content-center pt-4">
-                        <div id="googleMap">
-                            <img src="images/map.png" class="img-fluid py-3">
+                <div class="form-row">
+                    <textarea class="form-control" placeholder="Comment" rows="6"></textarea>
+                </div>
+                <div class="form-row pt-2 float-right">
+                    <button class="button2" type="submit">Send Message</button>
+                </div>
+            </form>
+                    
+                <div class="row">    
+                    <div class="col-lg-8 mx-auto">
+                        <div class="row justify-content-center pt-4">
+                            <div id="googleMap">
+                                <img src="images/map.png" class="img-fluid py-3" alt="map of location">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div> 
+            </div> 
         </div>
 
     </main>
